@@ -1,0 +1,726 @@
+/*Esential Css*/
+
+*
+{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body
+{   zoom: 75%;
+    min-height: 100vh;
+}
+
+
+
+
+
+/*Navigation and athor top things*/
+.NaslovPupin
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black; 
+    font-size: 35px; 
+    margin-bottom: 4%;
+    margin-top: 1%;
+    margin-left: 10.5%;
+}
+
+.Menu1
+{
+    display: none;
+    zoom: 120%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.Hold1
+{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Menu
+{
+    zoom: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.Hold
+{
+    width: 80%;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Links
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    background-color: rgb(248, 248, 248);
+    overflow: hidden;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 3%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.Links:hover
+{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+
+.Links1
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    background-color: rgb(248, 248, 248);
+    overflow: hidden;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 3%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.Links1:hover
+{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+
+.Can
+{
+    flex: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); 
+    background: linear-gradient(45deg, rgba(34,193,195,1) 15%, rgba(15,136,232,1) 100%);
+}
+
+.DropCon
+{
+    width: 100%;
+    height: 0;
+    margin-top: 50px;
+    z-index: 2;
+    transition:  0.5s;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.Partner:hover
+{
+    cursor: pointer;
+    background-color:  rgba(151, 151, 151, 0.555) ;
+}
+
+.Partner:hover h1
+{
+    color: rgb(0, 132, 255);
+}
+
+.Partner h1
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.List
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.List a
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.List a:hover
+{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+
+.ImageCont
+{
+    width: 248px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Main page of contents*/
+.MainSide
+{
+    height: 100vh;
+}
+
+.ImageCon
+{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.Image 
+{
+    display: none;
+}
+
+.Last, .Next 
+{
+    background-color: rgb(24, 214, 214);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.Last
+{
+    margin-left: 3%;
+}
+
+.Next 
+{
+    margin-right: 3%;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.Last:hover, .Next:hover 
+{
+    background-color: rgba(22, 129, 129, 0.658);
+}
+
+.NumbCon
+{
+    display: none;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.TextCon
+{
+    background: rgba(90, 89, 89, 0.753);
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.dot , .dot1
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(206, 208, 211);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover,  .dot1:hover
+{
+    background-color: #03c7f8;
+}
+
+
+.Text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:rgb(255, 255, 255);
+    font-size: 170%;
+    padding: 2%; 
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    margin-left: 1%;
+}
+
+
+.ReadMore
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    background: linear-gradient(90deg, rgba(15,136,232,1) 0%, rgba(34,193,195,1) 40%, rgba(32,187,199,1) 60%, rgba(15,136,232,1) 100%);
+    padding: 20px; 
+    width: 15%; 
+    margin-top: 2%;
+    border: none;
+    font-size: 28px;
+}
+
+.ReadMore:hover
+{
+    cursor: pointer;
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    background: linear-gradient(90deg,rgba(34,193,195,1) 0%,  rgba(15,136,232,1) 40%, rgba(15,136,232,1) 60%,  rgba(32,187,199,1) 100%);
+    padding: 20px; 
+    width: 15%; 
+    margin-top: 2%;
+    border: none;
+    font-size: 28px;
+}
+
+.hide
+{
+    -webkit-animation-name: hide;
+    -webkit-animation-duration: 1.5s;
+    animation-name: hide;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes hide 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes hide
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.SSlide
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic 
+{   
+    flex: 1;
+}
+
+
+.container
+{
+    display: none;
+    width: 100%;
+    height: 800px;
+}
+
+.TekstHold
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gltekst
+{
+    width: 90%;
+    font-size: 25px;
+    font-family: Arial;
+    color: #6B7795;
+}
+
+.naslov
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 80%;
+    color: #273C5F;
+    font-family: Arial;
+}
+
+.Povekje
+{
+    border: 0;
+    background: linear-gradient(90deg, rgba(15,136,232,1) 0%, rgba(34,193,195,1) 40%, rgba(32,187,199,1) 60%, rgba(15,136,232,1) 100%);
+    margin-top: 75px;
+    font-size: 25px;
+    width: 50%;
+    padding: 20px;
+}
+
+.Povekje:hover
+{
+    cursor: pointer;
+    background: linear-gradient(90deg,rgba(34,193,195,1) 0%,  rgba(15,136,232,1) 40%, rgba(15,136,232,1) 60%,  rgba(32,187,199,1) 100%);
+}
+
+.activeLink
+{
+    color: lightseagreen;
+}
+
+.Bord
+{
+    font-family: 'Trebuchet MS', cursive;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.Blog
+{
+    margin-top: 5%;
+    margin-left: 10.5%;
+    margin-right: 10.5%;
+    display: flex;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.BlogPick h1
+{
+    margin: 5%;
+}
+
+.Blog h1:hover
+{
+    cursor: pointer;
+    color: rgb(5, 129, 170);
+
+}
+
+
+.BlogPick
+{
+    width: 30%;
+    font-size: 10px;
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.BlogShow
+{
+    margin-left: 5%;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Info
+{
+    width: 90%;
+    margin: 4%;
+    padding: 3%;
+    background-color: rgba(231, 231, 231, 0.644);
+    border:  1px rgba(231, 231,231 , 0.644) solid;
+}
+
+.Info:hover
+{
+    cursor: pointer;
+    color: rgb(5, 129, 170);
+    border: 1px rgb(5, 129, 170) solid;
+}
+
+.News
+{
+    font-family: 'Trebuchet MS', cursive;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+.NewsBord
+{
+    overflow-x: scroll;
+    margin-top: 5%;
+    background-color: rgba(204, 204, 204, 0.418);
+    display: flex;
+}
+
+.NewsBord::-webkit-scrollbar
+{
+    height: 20px;
+}
+
+.NewsBord::-webkit-scrollbar-track
+{
+    background-color: rgb(200, 228, 228);
+}
+
+.NewsBord::-webkit-scrollbar-thumb
+{
+    background-color: rgb(163, 195, 197);
+}
+
+.NewsHolder
+{
+    text-align: center;
+    background-color: lightgray;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border: 1px lightgray solid;
+    
+}
+
+.NewsHolder:hover
+{
+    cursor: pointer;
+    color: rgb(52, 96, 124);
+    border: 1px lightskyblue solid;
+}
+
+
+
+
+
+
+
+/*Footer*/
+.FooterSide
+{
+    position: relative;
+
+}
+
+.InfoFoot
+{
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
+
+.FootHold
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.FootInfo
+{   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.FootInfo h2
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.FootInfo h3
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.FootInfo h4 
+{
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.Copyright
+{
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgb(32, 31, 31);
+}
+
+.UsefullLinks
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.UsefullLinks a
+{ 
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+}
+
+.UsefullLinks a:hover
+{ 
+    cursor: pointer;
+    color: rgba(34, 227, 252, 0.808);
+}
+
+.iconNum
+{
+    display: flex; 
+    align-items: center; 
+    position: relative;
+}
+
+.Checker
+{
+    display: inline;
+}
+
+@media only screen and (max-width: 1000px) 
+{
+    .DropCon
+    {
+        margin-top: 100px;
+    }
+
+    .Checker
+    {
+        display: none;
+    }
+
+    .Text
+    {
+        font-size: 120%;
+    }   
+
+    .NaslovPupin
+    {
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Menu1
+    {
+        display: flex;
+    }
+
+    .Hold1
+    {
+        position: relative;
+    }
+
+    .Menu
+    {
+        display: none;
+    }
+
+    .iconNum
+    {
+        display: none;
+    }
+
+    .SSlide
+    {
+        display: none;
+    }
+
+    .BlogPick
+    {
+        display: none;
+    }
+
+    .ReadMore
+    {
+        font-size: 20px;
+        width: 20%;
+    }
+
+    .ImageCont
+    {
+        display: none;
+    }
+
+    .NewsBord
+    {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,437 @@
+/*Esential Css*/
+
+*
+{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body
+{   zoom: 75%;
+    min-height: 100vh;
+}
+
+
+
+
+
+/*Navigation and athor top things*/
+.NaslovPupin
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black; 
+    font-size: 35px; 
+    margin-bottom: 4%;
+    margin-top: 1%;
+    margin-left: 10.5%;
+}
+
+.Menu1
+{
+    display: none;
+    zoom: 120%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.Hold1
+{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Menu
+{
+    zoom: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.Hold
+{
+    width: 80%;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.Links
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    background-color: rgb(248, 248, 248);
+    overflow: hidden;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 3%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.Links:hover
+{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+
+.Links1
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    background-color: rgb(248, 248, 248);
+    overflow: hidden;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 3%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.Links1:hover
+{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+
+.Can
+{
+    flex: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); 
+    background: linear-gradient(45deg, rgba(34,193,195,1) 15%, rgba(15,136,232,1) 100%);
+}
+
+.DropCon
+{
+    width: 100%;
+    height: 0;
+    margin-top: 50px;
+    z-index: 2;
+    transition:  0.5s;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.Partner:hover
+{
+    cursor: pointer;
+    background-color:  rgba(151, 151, 151, 0.555) ;
+}
+
+.Partner:hover h1
+{
+    color: rgb(0, 132, 255);
+}
+
+.Partner h1
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.List
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.List a
+{
+    font-family: 'Trebuchet MS', cursive;
+    font-weight: 1000;
+    height: 100%;
+    color: black;
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.List a:hover
+{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+
+.ImageCont
+{
+    width: 248px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Main page of contents*/
+.MainSide
+{
+    height: 100vh;
+    background-color: rgb(230, 228, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HoldPart
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(187, 197, 199);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.TitleHold
+{
+    font-size: 40px;
+    margin-bottom: 1%;
+    text-decoration: underline;
+}
+
+.TextHold
+{
+    color: rgb(25, 42, 48);
+}
+
+.LinkHold
+{
+    text-decoration: none;
+    color: #1b86f8;
+}
+
+.LinkHold:hover
+{
+    color: #09294d;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+.FooterSide
+{
+    position: relative;
+
+}
+
+.InfoFoot
+{
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: rgb(54, 54, 54);
+}
+
+.FootHold
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.FootInfo
+{   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.FootInfo h2
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.FootInfo h3
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.FootInfo h4 
+{
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.Copyright
+{
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgb(32, 31, 31);
+}
+
+.UsefullLinks
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.UsefullLinks a
+{ 
+    color: white;
+    font-size: 22px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+}
+
+.UsefullLinks a:hover
+{ 
+    cursor: pointer;
+    color: rgba(34, 227, 252, 0.808);
+}
+
+.iconNum
+{
+    display: flex; 
+    align-items: center; 
+    position: relative;
+}
+
+.Checker
+{
+    display: inline;
+}
+
+@media only screen and (max-width: 700px) 
+{
+    .DropCon
+    {
+        margin-top: 100px;
+    }
+
+    .Checker
+    {
+        display: none;
+    }
+
+    .Text
+    {
+        font-size: 120%;
+    }   
+
+    .NaslovPupin
+    {
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Menu1
+    {
+        display: flex;
+    }
+
+    .Hold1
+    {
+        position: relative;
+    }
+
+    .Menu
+    {
+        display: none;
+    }
+
+    .iconNum
+    {
+        display: none;
+    }
+
+    .ImageCont
+    {
+        display: none;
+    }
+
+    .HoldPart
+    {
+        margin: 0;
+        background-color: rgb(230, 228, 228);
+    }
+
+}
+
+@media only screen and (max-width: 1400px) 
+{
+    .MainSide
+    {
+        height: 150vh;
+    }
+
+}
